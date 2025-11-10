@@ -2094,8 +2094,7 @@
           ]
         }
       ]
-    },
-    {
+    }, {
       "id": 5,
       "name": "Semester 5",
       "branches": [
@@ -2104,24 +2103,417 @@
           "name": "Computer Science and Engineering",
           "subjects": [
             {
-              "id": "cse501",
-              "name": "Parallel Computing",
-              "materials": []
+              "id": "cse601",
+              "name": "AI",
+              "materials": [
+                {
+                  "title": "MODULE 1 AI.pptx",
+                  "description": "Ai notes",
+                  "path": "../data/notes/semester-5/cse/Ai/MODULE 1 AI.pptx.pdf",
+                  "type": "pdf",
+                  "size": "1.48 MB",
+                  "uploadDate": "2025-11-08",
+                  "downloadUrl": "../data/notes/semester-5/cse/Ai/MODULE 1 AI.pptx.pdf",
+                  "keywords": [
+                    "mod 1"
+                  ]
+                }
+              ]
             },
             {
-              "id": "cse502",
-              "name": "Blockchain Technology",
-              "materials": []
+              "id": "cse602",
+              "name": "Computer Network",
+              "materials": [
+                {
+                  "title": "CN Lab Manual",
+                  "description": "Computer Networks Lab Manual with practical exercises",
+                  "path": "../data/notes/semester-5/cse/computer network/CN Lab Manual.pdf",
+                  "type": "pdf",
+                  "size": "1.82 MB",
+                  "uploadDate": "2025-10-19",
+                  "downloadUrl": "../data/notes/semester-5/cse/computer network/CN Lab Manual.pdf",
+                  "keywords": [
+                    "cn",
+                    "lab manual"
+                  ]
+                },
+                {
+                  "title": "CN Module 5",
+                  "description": "Computer Networks Module 5 notes",
+                  "path": "../data/notes/semester-5/cse/computer network/CN Mod5@AzDOCUMENTS.in.pdf",
+                  "type": "pdf",
+                  "size": "4.13 MB",
+                  "uploadDate": "2025-10-19",
+                  "downloadUrl": "../data/notes/semester-5/cse/computer network/CN Mod5@AzDOCUMENTS.in.pdf",
+                  "keywords": [
+                    "cn",
+                    "mod 5"
+                  ]
+                },
+                {
+                  "title": "CN Module 3",
+                  "description": "Computer Networks Module 3 notes",
+                  "path": "../data/notes/semester-5/cse/computer network/CN module 3.pdf",
+                  "type": "pdf",
+                  "size": "15.33 MB",
+                  "uploadDate": "2025-10-28",
+                  "downloadUrl": "../data/notes/semester-5/cse/computer network/CN module 3.pdf",
+                  "keywords": [
+                    "cn",
+                    "mod 3"
+                  ]
+                },
+                {
+                  "title": "CN Module 4",
+                  "description": "Computer Networks Module 4 notes",
+                  "path": "../data/notes/semester-5/cse/computer network/CN module 4.pdf",
+                  "type": "pdf",
+                  "size": "7.72 MB",
+                  "uploadDate": "2025-10-28",
+                  "downloadUrl": "../data/notes/semester-5/cse/computer network/CN module 4.pdf",
+                  "keywords": [
+                    "cn",
+                    "mod 4"
+                  ]
+                },
+                {
+                  "title": "CN Notes 1",
+                  "description": "Computer Networks comprehensive notes",
+                  "path": "../data/notes/semester-5/cse/computer network/CN-NOTES_1.pdf",
+                  "type": "pdf",
+                  "size": "3.46 MB",
+                  "uploadDate": "2025-10-19",
+                  "downloadUrl": "../data/notes/semester-5/cse/computer network/CN-NOTES_1.pdf",
+                  "keywords": [
+                    "cn",
+                    "notes"
+                  ]
+                },
+                {
+                  "title": "Computer Networks Module 3",
+                  "description": "Computer Networks Module 3 detailed notes",
+                  "path": "../data/notes/semester-5/cse/computer network/COMPUTER NETWORKSMODULE 3.pdf",
+                  "type": "pdf",
+                  "size": "3.07 MB",
+                  "uploadDate": "2025-11-07",
+                  "downloadUrl": "../data/notes/semester-5/cse/computer network/COMPUTER NETWORKSMODULE 3.pdf",
+                  "keywords": [
+                    "cn",
+                    "mod 3"
+                  ]
+                }
+              ]
             },
             {
-              "id": "cse503",
-              "name": "Big Data Analytics",
-              "materials": []
+              "id": "cse603",
+              "name": "EVS",
+              "materials": [
+                {
+                  "title": "BESK508-module-1-mcq",
+                  "description": "EVS notes",
+                  "path": "../data/notes/semester-5/cse/EVS/BESK508-module-1-mcq.pdf",
+                  "type": "pdf",
+                  "size": "512.4 KB",
+                  "uploadDate": "2025-11-03",
+                  "downloadUrl": "../data/notes/semester-5/cse/EVS/BESK508-module-1-mcq.pdf",
+                  "keywords": [
+                    "evs"
+                  ]
+                },
+                {
+                  "title": "BESK508-module-3-mcq (1)",
+                  "description": "EVS notes",
+                  "path": "../data/notes/semester-5/cse/EVS/BESK508-module-3-mcq (1).pdf",
+                  "type": "pdf",
+                  "size": "388.9 KB",
+                  "uploadDate": "2025-11-03",
+                  "downloadUrl": "../data/notes/semester-5/cse/EVS/BESK508-module-3-mcq (1).pdf",
+                  "keywords": [
+                    "evs"
+                  ]
+                },
+                {
+                  "title": "Environmental_Studies_MVJ22ENV58_AnswerKey",
+                  "description": "EVS notes",
+                  "path": "../data/notes/semester-5/cse/EVS/Environmental_Studies_MVJ22ENV58_AnswerKey.pdf",
+                  "type": "pdf",
+                  "size": "6.44 KB",
+                  "uploadDate": "2025-11-03",
+                  "downloadUrl": "../data/notes/semester-5/cse/EVS/Environmental_Studies_MVJ22ENV58_AnswerKey.pdf",
+                  "keywords": [
+                    "evs"
+                  ]
+                }
+              ]
             },
             {
-              "id": "cse504",
-              "name": "DevOps Engineering",
-              "materials": []
+              "id": "cse604",
+              "name": "Research Methodology",
+              "materials": [
+                {
+                  "title": "Research Methodology",
+                  "description": "Complete Research Methodology notes",
+                  "path": "../data/notes/semester-5/cse/Research methadology/Research Methodology.pdf",
+                  "type": "pdf",
+                  "size": "362.31 KB",
+                  "uploadDate": "2025-11-08",
+                  "downloadUrl": "../data/notes/semester-5/cse/Research methadology/Research Methodology.pdf",
+                  "keywords": [
+                    "rm",
+                    "research"
+                  ]
+                },
+                {
+                  "title": "RM Module 4",
+                  "description": "Research Methodology Module 4",
+                  "path": "../data/notes/semester-5/cse/Research methadology/RM - 4.pdf",
+                  "type": "pdf",
+                  "size": "612.86 KB",
+                  "uploadDate": "2025-11-04",
+                  "downloadUrl": "../data/notes/semester-5/cse/Research methadology/RM - 4.pdf",
+                  "keywords": [
+                    "rm",
+                    "mod 4"
+                  ]
+                },
+                {
+                  "title": "RM Module 3",
+                  "description": "Research Methodology Module 3",
+                  "path": "../data/notes/semester-5/cse/Research methadology/RM -3.pdf",
+                  "type": "pdf",
+                  "size": "562.35 KB",
+                  "uploadDate": "2025-11-04",
+                  "downloadUrl": "../data/notes/semester-5/cse/Research methadology/RM -3.pdf",
+                  "keywords": [
+                    "rm",
+                    "mod 3"
+                  ]
+                },
+                {
+                  "title": "RM Unit 2",
+                  "description": "Research Methodology Unit 2",
+                  "path": "../data/notes/semester-5/cse/Research methadology/RM UNIT 2.pdf",
+                  "type": "pdf",
+                  "size": "386.42 KB",
+                  "uploadDate": "2025-11-08",
+                  "downloadUrl": "../data/notes/semester-5/cse/Research methadology/RM UNIT 2.pdf",
+                  "keywords": [
+                    "rm",
+                    "unit 2"
+                  ]
+                },
+                {
+                  "title": "RM Unit 3",
+                  "description": "Research Methodology Unit 3",
+                  "path": "../data/notes/semester-5/cse/Research methadology/RM UNIT 3.pdf",
+                  "type": "pdf",
+                  "size": "358.76 KB",
+                  "uploadDate": "2025-11-08",
+                  "downloadUrl": "../data/notes/semester-5/cse/Research methadology/RM UNIT 3.pdf",
+                  "keywords": [
+                    "rm",
+                    "unit 3"
+                  ]
+                },
+                {
+                  "title": "RM Module 4",
+                  "description": "Research Methodology Module 4 detailed",
+                  "path": "../data/notes/semester-5/cse/Research methadology/RM_Module IV.pdf",
+                  "type": "pdf",
+                  "size": "394.9 KB",
+                  "uploadDate": "2025-11-08",
+                  "downloadUrl": "../data/notes/semester-5/cse/Research methadology/RM_Module IV.pdf",
+                  "keywords": [
+                    "rm",
+                    "mod 4"
+                  ]
+                },
+                {
+                  "title": "RM Module 5",
+                  "description": "Research Methodology Module 5",
+                  "path": "../data/notes/semester-5/cse/Research methadology/RM_Module V_pdf.pdf",
+                  "type": "pdf",
+                  "size": "1.53 MB",
+                  "uploadDate": "2025-11-08",
+                  "downloadUrl": "../data/notes/semester-5/cse/Research methadology/RM_Module V_pdf.pdf",
+                  "keywords": [
+                    "rm",
+                    "mod 5"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "cse605",
+              "name": "SEPM",
+              "materials": [
+                {
+                  "title": "SEPM Module 3",
+                  "description": "Software Engineering and Project Management Module 3",
+                  "path": "../data/notes/semester-5/cse/SEPM/SEPM Module 3.pdf",
+                  "type": "pdf",
+                  "size": "958.6 KB",
+                  "uploadDate": "2025-10-19",
+                  "downloadUrl": "../data/notes/semester-5/cse/SEPM/SEPM Module 3.pdf",
+                  "keywords": [
+                    "sepm",
+                    "mod 3"
+                  ]
+                },
+                {
+                  "title": "SEPM Module 3 & 4",
+                  "description": "Software Engineering and Project Management Modules 3 & 4",
+                  "path": "../data/notes/semester-5/cse/SEPM/SEPM Module 3&4.pdf",
+                  "type": "pdf",
+                  "size": "48.6 MB",
+                  "uploadDate": "2025-11-02",
+                  "downloadUrl": "../data/notes/semester-5/cse/SEPM/SEPM Module 3&4.pdf",
+                  "keywords": [
+                    "sepm",
+                    "mod 3",
+                    "mod 4"
+                  ]
+                },
+                {
+                  "title": "SEPM Module 4",
+                  "description": "Software Engineering and Project Management Module 4",
+                  "path": "../data/notes/semester-5/cse/SEPM/SEPM-MOD4.pdf",
+                  "type": "pdf",
+                  "size": "433.12 KB",
+                  "uploadDate": "2025-10-19",
+                  "downloadUrl": "../data/notes/semester-5/cse/SEPM/SEPM-MOD4.pdf",
+                  "keywords": [
+                    "sepm",
+                    "mod 4"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "cse606",
+              "name": "Theory of Computation",
+              "materials": [
+                {
+                  "title": "TOC Module 5 - Textbook",
+                  "description": "Theory of Computation Module 5 from textbook",
+                  "path": "../data/notes/semester-5/cse/Theory of computation/BCS503-module-5-textbook.pdf",
+                  "type": "pdf",
+                  "size": "4.3 MB",
+                  "uploadDate": "2025-11-01",
+                  "downloadUrl": "../data/notes/semester-5/cse/Theory of computation/BCS503-module-5-textbook.pdf",
+                  "keywords": [
+                    "toc",
+                    "mod 5"
+                  ]
+                },
+                {
+                  "title": "TOC Module 5",
+                  "description": "Theory of Computation Module 5 notes",
+                  "path": "../data/notes/semester-5/cse/Theory of computation/mod 5.pdf",
+                  "type": "pdf",
+                  "size": "2.54 MB",
+                  "uploadDate": "2025-10-19",
+                  "downloadUrl": "../data/notes/semester-5/cse/Theory of computation/mod 5.pdf",
+                  "keywords": [
+                    "toc",
+                    "mod 5"
+                  ]
+                },
+                {
+                  "title": "TOC Module 4 - Problems",
+                  "description": "Theory of Computation Module 4 problems and solutions",
+                  "path": "../data/notes/semester-5/cse/Theory of computation/MOD-4 TOC PROBLEMS.pdf",
+                  "type": "pdf",
+                  "size": "1.58 MB",
+                  "uploadDate": "2025-10-19",
+                  "downloadUrl": "../data/notes/semester-5/cse/Theory of computation/MOD-4 TOC PROBLEMS.pdf",
+                  "keywords": [
+                    "toc",
+                    "mod 4",
+                    "problems"
+                  ]
+                },
+                {
+                  "title": "TOC Module 1 & 2",
+                  "description": "Theory of Computation Modules 1 and 2 notes",
+                  "path": "../data/notes/semester-5/cse/Theory of computation/module 1 and 2 toc notes.pdf",
+                  "type": "pdf",
+                  "size": "12.02 MB",
+                  "uploadDate": "2025-10-19",
+                  "downloadUrl": "../data/notes/semester-5/cse/Theory of computation/module 1 and 2 toc notes.pdf",
+                  "keywords": [
+                    "toc",
+                    "mod 1",
+                    "mod 2"
+                  ]
+                },
+                {
+                  "title": "TOC Module 3",
+                  "description": "Theory of Computation Module 3 notes",
+                  "path": "../data/notes/semester-5/cse/Theory of computation/toc m3.pdf",
+                  "type": "pdf",
+                  "size": "1.44 MB",
+                  "uploadDate": "2025-10-28",
+                  "downloadUrl": "../data/notes/semester-5/cse/Theory of computation/toc m3.pdf",
+                  "keywords": [
+                    "toc",
+                    "mod 3"
+                  ]
+                },
+                {
+                  "title": "TOC Module 4",
+                  "description": "Theory of Computation Module 4 notes",
+                  "path": "../data/notes/semester-5/cse/Theory of computation/toc m4.pdf",
+                  "type": "pdf",
+                  "size": "19.76 MB",
+                  "uploadDate": "2025-10-28",
+                  "downloadUrl": "../data/notes/semester-5/cse/Theory of computation/toc m4.pdf",
+                  "keywords": [
+                    "toc",
+                    "mod 4"
+                  ]
+                },
+                {
+                  "title": "TOC Module 1",
+                  "description": "Theory of Computation Module 1 notes",
+                  "path": "../data/notes/semester-5/cse/Theory of computation/TOC module 1.pdf",
+                  "type": "pdf",
+                  "size": "40.23 MB",
+                  "uploadDate": "2025-10-19",
+                  "downloadUrl": "../data/notes/semester-5/cse/Theory of computation/TOC module 1.pdf",
+                  "keywords": [
+                    "toc",
+                    "mod 1"
+                  ]
+                },
+                {
+                  "title": "TOC Module 3 & 4",
+                  "description": "Theory of Computation Modules 3 and 4 combined notes",
+                  "path": "../data/notes/semester-5/cse/Theory of computation/TOC Module 3 and 4.pdf",
+                  "type": "pdf",
+                  "size": "24.08 MB",
+                  "uploadDate": "2025-10-28",
+                  "downloadUrl": "../data/notes/semester-5/cse/Theory of computation/TOC Module 3 and 4.pdf",
+                  "keywords": [
+                    "toc",
+                    "mod 3",
+                    "mod 4"
+                  ]
+                },
+                {
+                  "title": "TOC Module 2",
+                  "description": "Theory of Computation Module 2 notes",
+                  "path": "../data/notes/semester-5/cse/Theory of computation/toc_mod_2.pdf",
+                  "type": "pdf",
+                  "size": "7.8 MB",
+                  "uploadDate": "2025-10-19",
+                  "downloadUrl": "../data/notes/semester-5/cse/Theory of computation/toc_mod_2.pdf",
+                  "keywords": [
+                    "toc",
+                    "mod 2"
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -2137,421 +2529,29 @@
           "subjects": [
             {
               "id": "cse601",
-              "name": "AI",
-              "materials": [
-                {
-                  "title": "MODULE 1 AI.pptx",
-                  "description": "Ai notes",
-                  "path": "../data/notes/semester-6/cse/Ai/MODULE 1 AI.pptx.pdf",
-                  "type": "pdf",
-                  "size": "1.48 MB",
-                  "uploadDate": "2025-11-08",
-                  "downloadUrl": "../data/notes/semester-6/cse/Ai/MODULE 1 AI.pptx.pdf",
-                  "keywords": [
-                    "mod 1"
-                  ]
-                }
-              ]
+              "name": "Parallel Computing",
+              "materials": []
             },
             {
               "id": "cse602",
-              "name": "Computer Network",
-              "materials": [
-                {
-                  "title": "CN Lab Manual",
-                  "description": "Computer Networks Lab Manual with practical exercises",
-                  "path": "../data/notes/semester-6/cse/computer network/CN Lab Manual.pdf",
-                  "type": "pdf",
-                  "size": "1.82 MB",
-                  "uploadDate": "2025-10-19",
-                  "downloadUrl": "../data/notes/semester-6/cse/computer network/CN Lab Manual.pdf",
-                  "keywords": [
-                    "cn",
-                    "lab manual"
-                  ]
-                },
-                {
-                  "title": "CN Module 5",
-                  "description": "Computer Networks Module 5 notes",
-                  "path": "../data/notes/semester-6/cse/computer network/CN Mod5@AzDOCUMENTS.in.pdf",
-                  "type": "pdf",
-                  "size": "4.13 MB",
-                  "uploadDate": "2025-10-19",
-                  "downloadUrl": "../data/notes/semester-6/cse/computer network/CN Mod5@AzDOCUMENTS.in.pdf",
-                  "keywords": [
-                    "cn",
-                    "mod 5"
-                  ]
-                },
-                {
-                  "title": "CN Module 3",
-                  "description": "Computer Networks Module 3 notes",
-                  "path": "../data/notes/semester-6/cse/computer network/CN module 3.pdf",
-                  "type": "pdf",
-                  "size": "15.33 MB",
-                  "uploadDate": "2025-10-28",
-                  "downloadUrl": "../data/notes/semester-6/cse/computer network/CN module 3.pdf",
-                  "keywords": [
-                    "cn",
-                    "mod 3"
-                  ]
-                },
-                {
-                  "title": "CN Module 4",
-                  "description": "Computer Networks Module 4 notes",
-                  "path": "../data/notes/semester-6/cse/computer network/CN module 4.pdf",
-                  "type": "pdf",
-                  "size": "7.72 MB",
-                  "uploadDate": "2025-10-28",
-                  "downloadUrl": "../data/notes/semester-6/cse/computer network/CN module 4.pdf",
-                  "keywords": [
-                    "cn",
-                    "mod 4"
-                  ]
-                },
-                {
-                  "title": "CN Notes 1",
-                  "description": "Computer Networks comprehensive notes",
-                  "path": "../data/notes/semester-6/cse/computer network/CN-NOTES_1.pdf",
-                  "type": "pdf",
-                  "size": "3.46 MB",
-                  "uploadDate": "2025-10-19",
-                  "downloadUrl": "../data/notes/semester-6/cse/computer network/CN-NOTES_1.pdf",
-                  "keywords": [
-                    "cn",
-                    "notes"
-                  ]
-                },
-                {
-                  "title": "Computer Networks Module 3",
-                  "description": "Computer Networks Module 3 detailed notes",
-                  "path": "../data/notes/semester-6/cse/computer network/COMPUTER NETWORKSMODULE 3.pdf",
-                  "type": "pdf",
-                  "size": "3.07 MB",
-                  "uploadDate": "2025-11-07",
-                  "downloadUrl": "../data/notes/semester-6/cse/computer network/COMPUTER NETWORKSMODULE 3.pdf",
-                  "keywords": [
-                    "cn",
-                    "mod 3"
-                  ]
-                }
-              ]
+              "name": "Blockchain Technology",
+              "materials": []
             },
             {
               "id": "cse603",
-              "name": "EVS",
-              "materials": [
-                {
-                  "title": "BESK508-module-1-mcq",
-                  "description": "EVS notes",
-                  "path": "../data/notes/semester-6/cse/EVS/BESK508-module-1-mcq.pdf",
-                  "type": "pdf",
-                  "size": "512.4 KB",
-                  "uploadDate": "2025-11-03",
-                  "downloadUrl": "../data/notes/semester-6/cse/EVS/BESK508-module-1-mcq.pdf",
-                  "keywords": [
-                    "evs"
-                  ]
-                },
-                {
-                  "title": "BESK508-module-3-mcq (1)",
-                  "description": "EVS notes",
-                  "path": "../data/notes/semester-6/cse/EVS/BESK508-module-3-mcq (1).pdf",
-                  "type": "pdf",
-                  "size": "388.9 KB",
-                  "uploadDate": "2025-11-03",
-                  "downloadUrl": "../data/notes/semester-6/cse/EVS/BESK508-module-3-mcq (1).pdf",
-                  "keywords": [
-                    "evs"
-                  ]
-                },
-                {
-                  "title": "Environmental_Studies_MVJ22ENV58_AnswerKey",
-                  "description": "EVS notes",
-                  "path": "../data/notes/semester-6/cse/EVS/Environmental_Studies_MVJ22ENV58_AnswerKey.pdf",
-                  "type": "pdf",
-                  "size": "6.44 KB",
-                  "uploadDate": "2025-11-03",
-                  "downloadUrl": "../data/notes/semester-6/cse/EVS/Environmental_Studies_MVJ22ENV58_AnswerKey.pdf",
-                  "keywords": [
-                    "evs"
-                  ]
-                }
-              ]
+              "name": "Big Data Analytics",
+              "materials": []
             },
             {
               "id": "cse604",
-              "name": "Research Methodology",
-              "materials": [
-                {
-                  "title": "Research Methodology",
-                  "description": "Complete Research Methodology notes",
-                  "path": "../data/notes/semester-6/cse/Research methadology/Research Methodology.pdf",
-                  "type": "pdf",
-                  "size": "362.31 KB",
-                  "uploadDate": "2025-11-08",
-                  "downloadUrl": "../data/notes/semester-6/cse/Research methadology/Research Methodology.pdf",
-                  "keywords": [
-                    "rm",
-                    "research"
-                  ]
-                },
-                {
-                  "title": "RM Module 4",
-                  "description": "Research Methodology Module 4",
-                  "path": "../data/notes/semester-6/cse/Research methadology/RM - 4.pdf",
-                  "type": "pdf",
-                  "size": "612.86 KB",
-                  "uploadDate": "2025-11-04",
-                  "downloadUrl": "../data/notes/semester-6/cse/Research methadology/RM - 4.pdf",
-                  "keywords": [
-                    "rm",
-                    "mod 4"
-                  ]
-                },
-                {
-                  "title": "RM Module 3",
-                  "description": "Research Methodology Module 3",
-                  "path": "../data/notes/semester-6/cse/Research methadology/RM -3.pdf",
-                  "type": "pdf",
-                  "size": "562.35 KB",
-                  "uploadDate": "2025-11-04",
-                  "downloadUrl": "../data/notes/semester-6/cse/Research methadology/RM -3.pdf",
-                  "keywords": [
-                    "rm",
-                    "mod 3"
-                  ]
-                },
-                {
-                  "title": "RM Unit 2",
-                  "description": "Research Methodology Unit 2",
-                  "path": "../data/notes/semester-6/cse/Research methadology/RM UNIT 2.pdf",
-                  "type": "pdf",
-                  "size": "386.42 KB",
-                  "uploadDate": "2025-11-08",
-                  "downloadUrl": "../data/notes/semester-6/cse/Research methadology/RM UNIT 2.pdf",
-                  "keywords": [
-                    "rm",
-                    "unit 2"
-                  ]
-                },
-                {
-                  "title": "RM Unit 3",
-                  "description": "Research Methodology Unit 3",
-                  "path": "../data/notes/semester-6/cse/Research methadology/RM UNIT 3.pdf",
-                  "type": "pdf",
-                  "size": "358.76 KB",
-                  "uploadDate": "2025-11-08",
-                  "downloadUrl": "../data/notes/semester-6/cse/Research methadology/RM UNIT 3.pdf",
-                  "keywords": [
-                    "rm",
-                    "unit 3"
-                  ]
-                },
-                {
-                  "title": "RM Module 4",
-                  "description": "Research Methodology Module 4 detailed",
-                  "path": "../data/notes/semester-6/cse/Research methadology/RM_Module IV.pdf",
-                  "type": "pdf",
-                  "size": "394.9 KB",
-                  "uploadDate": "2025-11-08",
-                  "downloadUrl": "../data/notes/semester-6/cse/Research methadology/RM_Module IV.pdf",
-                  "keywords": [
-                    "rm",
-                    "mod 4"
-                  ]
-                },
-                {
-                  "title": "RM Module 5",
-                  "description": "Research Methodology Module 5",
-                  "path": "../data/notes/semester-6/cse/Research methadology/RM_Module V_pdf.pdf",
-                  "type": "pdf",
-                  "size": "1.53 MB",
-                  "uploadDate": "2025-11-08",
-                  "downloadUrl": "../data/notes/semester-6/cse/Research methadology/RM_Module V_pdf.pdf",
-                  "keywords": [
-                    "rm",
-                    "mod 5"
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "cse605",
-              "name": "SEPM",
-              "materials": [
-                {
-                  "title": "SEPM Module 3",
-                  "description": "Software Engineering and Project Management Module 3",
-                  "path": "../data/notes/semester-6/cse/SEPM/SEPM Module 3.pdf",
-                  "type": "pdf",
-                  "size": "958.6 KB",
-                  "uploadDate": "2025-10-19",
-                  "downloadUrl": "../data/notes/semester-6/cse/SEPM/SEPM Module 3.pdf",
-                  "keywords": [
-                    "sepm",
-                    "mod 3"
-                  ]
-                },
-                {
-                  "title": "SEPM Module 3 & 4",
-                  "description": "Software Engineering and Project Management Modules 3 & 4",
-                  "path": "../data/notes/semester-6/cse/SEPM/SEPM Module 3&4.pdf",
-                  "type": "pdf",
-                  "size": "48.6 MB",
-                  "uploadDate": "2025-11-02",
-                  "downloadUrl": "../data/notes/semester-6/cse/SEPM/SEPM Module 3&4.pdf",
-                  "keywords": [
-                    "sepm",
-                    "mod 3",
-                    "mod 4"
-                  ]
-                },
-                {
-                  "title": "SEPM Module 4",
-                  "description": "Software Engineering and Project Management Module 4",
-                  "path": "../data/notes/semester-6/cse/SEPM/SEPM-MOD4.pdf",
-                  "type": "pdf",
-                  "size": "433.12 KB",
-                  "uploadDate": "2025-10-19",
-                  "downloadUrl": "../data/notes/semester-6/cse/SEPM/SEPM-MOD4.pdf",
-                  "keywords": [
-                    "sepm",
-                    "mod 4"
-                  ]
-                }
-              ]
-            },
-            {
-              "id": "cse606",
-              "name": "Theory of Computation",
-              "materials": [
-                {
-                  "title": "TOC Module 5 - Textbook",
-                  "description": "Theory of Computation Module 5 from textbook",
-                  "path": "../data/notes/semester-6/cse/Theory of computation/BCS503-module-5-textbook.pdf",
-                  "type": "pdf",
-                  "size": "4.3 MB",
-                  "uploadDate": "2025-11-01",
-                  "downloadUrl": "../data/notes/semester-6/cse/Theory of computation/BCS503-module-5-textbook.pdf",
-                  "keywords": [
-                    "toc",
-                    "mod 5"
-                  ]
-                },
-                {
-                  "title": "TOC Module 5",
-                  "description": "Theory of Computation Module 5 notes",
-                  "path": "../data/notes/semester-6/cse/Theory of computation/mod 5.pdf",
-                  "type": "pdf",
-                  "size": "2.54 MB",
-                  "uploadDate": "2025-10-19",
-                  "downloadUrl": "../data/notes/semester-6/cse/Theory of computation/mod 5.pdf",
-                  "keywords": [
-                    "toc",
-                    "mod 5"
-                  ]
-                },
-                {
-                  "title": "TOC Module 4 - Problems",
-                  "description": "Theory of Computation Module 4 problems and solutions",
-                  "path": "../data/notes/semester-6/cse/Theory of computation/MOD-4 TOC PROBLEMS.pdf",
-                  "type": "pdf",
-                  "size": "1.58 MB",
-                  "uploadDate": "2025-10-19",
-                  "downloadUrl": "../data/notes/semester-6/cse/Theory of computation/MOD-4 TOC PROBLEMS.pdf",
-                  "keywords": [
-                    "toc",
-                    "mod 4",
-                    "problems"
-                  ]
-                },
-                {
-                  "title": "TOC Module 1 & 2",
-                  "description": "Theory of Computation Modules 1 and 2 notes",
-                  "path": "../data/notes/semester-6/cse/Theory of computation/module 1 and 2 toc notes.pdf",
-                  "type": "pdf",
-                  "size": "12.02 MB",
-                  "uploadDate": "2025-10-19",
-                  "downloadUrl": "../data/notes/semester-6/cse/Theory of computation/module 1 and 2 toc notes.pdf",
-                  "keywords": [
-                    "toc",
-                    "mod 1",
-                    "mod 2"
-                  ]
-                },
-                {
-                  "title": "TOC Module 3",
-                  "description": "Theory of Computation Module 3 notes",
-                  "path": "../data/notes/semester-6/cse/Theory of computation/toc m3.pdf",
-                  "type": "pdf",
-                  "size": "1.44 MB",
-                  "uploadDate": "2025-10-28",
-                  "downloadUrl": "../data/notes/semester-6/cse/Theory of computation/toc m3.pdf",
-                  "keywords": [
-                    "toc",
-                    "mod 3"
-                  ]
-                },
-                {
-                  "title": "TOC Module 4",
-                  "description": "Theory of Computation Module 4 notes",
-                  "path": "../data/notes/semester-6/cse/Theory of computation/toc m4.pdf",
-                  "type": "pdf",
-                  "size": "19.76 MB",
-                  "uploadDate": "2025-10-28",
-                  "downloadUrl": "../data/notes/semester-6/cse/Theory of computation/toc m4.pdf",
-                  "keywords": [
-                    "toc",
-                    "mod 4"
-                  ]
-                },
-                {
-                  "title": "TOC Module 1",
-                  "description": "Theory of Computation Module 1 notes",
-                  "path": "../data/notes/semester-6/cse/Theory of computation/TOC module 1.pdf",
-                  "type": "pdf",
-                  "size": "40.23 MB",
-                  "uploadDate": "2025-10-19",
-                  "downloadUrl": "../data/notes/semester-6/cse/Theory of computation/TOC module 1.pdf",
-                  "keywords": [
-                    "toc",
-                    "mod 1"
-                  ]
-                },
-                {
-                  "title": "TOC Module 3 & 4",
-                  "description": "Theory of Computation Modules 3 and 4 combined notes",
-                  "path": "../data/notes/semester-6/cse/Theory of computation/TOC Module 3 and 4.pdf",
-                  "type": "pdf",
-                  "size": "24.08 MB",
-                  "uploadDate": "2025-10-28",
-                  "downloadUrl": "../data/notes/semester-6/cse/Theory of computation/TOC Module 3 and 4.pdf",
-                  "keywords": [
-                    "toc",
-                    "mod 3",
-                    "mod 4"
-                  ]
-                },
-                {
-                  "title": "TOC Module 2",
-                  "description": "Theory of Computation Module 2 notes",
-                  "path": "../data/notes/semester-6/cse/Theory of computation/toc_mod_2.pdf",
-                  "type": "pdf",
-                  "size": "7.8 MB",
-                  "uploadDate": "2025-10-19",
-                  "downloadUrl": "../data/notes/semester-6/cse/Theory of computation/toc_mod_2.pdf",
-                  "keywords": [
-                    "toc",
-                    "mod 2"
-                  ]
-                }
-              ]
+              "name": "DevOps Engineering",
+              "materials": []
             }
           ]
         }
       ]
     }
+   
   ],
   "searchIndex": {
     "subjects": {
