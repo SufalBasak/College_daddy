@@ -606,7 +606,6 @@ body::before {
   font-weight: 600;
   transition: all 0.3s ease;
   position: relative;
-  display: inline-block;
   float: right;
 }
 
