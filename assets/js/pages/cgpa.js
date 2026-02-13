@@ -1,4 +1,3 @@
-
 // Chart variables
 let progressChart = null;
 let semesterChart = null;
@@ -12,7 +11,7 @@ const companyTiers = {
     'C': { minCGPA: 6.0, companies: [], ctc: 'Below ₹5 LPA' }
 };
 
- const companyData = [
+const companyData = [
     // S+ Tier Companies (₹30+ LPA)
     { name: 'McKinsey & Company', tier: 'S+', cgpa: 8.0 },
     { name: 'Boston Consulting Group', tier: 'S+', cgpa: 8.0 },
@@ -31,7 +30,7 @@ const companyTiers = {
     { name: 'DE Shaw & Co.', tier: 'S+', cgpa: 8.0 },
     { name: 'WorldQuant', tier: 'S+', cgpa: 8.0 },
     { name: 'BlackRock', tier: 'S+', cgpa: 7.5 },
-    
+
     // A+ Tier Companies (₹20-30 LPA)
     { name: 'Adobe', tier: 'A+', cgpa: 7.5 },
     { name: 'Oracle', tier: 'A+', cgpa: 7.5 },
@@ -66,7 +65,7 @@ const companyTiers = {
     { name: 'L&T Infotech', tier: 'A', cgpa: 7.5 },
     { name: 'Sonata Software', tier: 'A', cgpa: 7.0 },
     { name: 'Sasken Technologies', tier: 'A', cgpa: 7.0 },
-    
+
     // B Tier Companies (₹5-10 LPA)
     { name: 'Small startups or entry-level roles in various industries', tier: 'B', cgpa: 6.0 },
     { name: 'ABC Tech Solutions', tier: 'B', cgpa: 6.0 },
@@ -112,13 +111,13 @@ const companyTiers = {
 
 
 // Wait for DOM to load
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Hide all result sections initially
     hideAllSections();
-    
+
     // Initialize data and event listeners
     initializeAll();
-    
+
     // Add calculate button event listener
     const calculateBtn = document.getElementById('calculateBtn');
     if (calculateBtn) {
@@ -133,7 +132,7 @@ function hideAllSections() {
         'company-eligibility',
         'error'
     ];
-    
+
     sectionsToHide.forEach(id => {
         const element = document.getElementById(id);
         if (element) {
@@ -174,7 +173,7 @@ function initializeMobileMenu() {
 function initializeTooltips() {
     document.querySelectorAll('.tooltip i').forEach(tooltip => {
         const title = tooltip.getAttribute('title');
-        
+
         tooltip.addEventListener('mouseenter', (e) => {
             const tooltipDiv = document.createElement('div');
             tooltipDiv.className = 'tooltip-content';
@@ -202,27 +201,27 @@ function initializeCompanyData() {
 function calculate() {
     // Reset display
     hideAllSections();
-    
+
     // Get input values
     const currentCGPA = parseFloat(document.getElementById('currentCGPA').value);
     const completedSem = parseInt(document.getElementById('completedSem').value);
     const targetCGPA = parseFloat(document.getElementById('targetCGPA').value);
-    
+
     // Validate inputs
     if (!validateInputs(currentCGPA, completedSem, targetCGPA)) {
         return;
     }
-    
+
     // Calculate CGPA requirements
     const remainingSem = 8 - completedSem;
     const requiredCGPA = calculateRequiredCGPA(currentCGPA, completedSem, targetCGPA, remainingSem);
-    
+
     if (requiredCGPA > 10) {
         const maxPossible = ((currentCGPA * completedSem + 10 * remainingSem) / 8).toFixed(2);
         showError(`Target CGPA is not achievable. Maximum possible CGPA is ${maxPossible}`);
         return;
     }
-    
+
     // Show and update all sections
     showResults(requiredCGPA, remainingSem, currentCGPA);
 }
@@ -232,17 +231,17 @@ function validateInputs(currentCGPA, completedSem, targetCGPA) {
         showError('Please fill in all fields with valid numbers');
         return false;
     }
-    
+
     if (currentCGPA < 0 || currentCGPA > 10 || targetCGPA < 0 || targetCGPA > 10) {
         showError('CGPA must be between 0 and 10');
         return false;
     }
-    
+
     if (completedSem < 1 || completedSem >= 8) {
         showError('Completed semesters must be between 1 and 7');
         return false;
     }
-    
+
     return true;
 }
 
@@ -255,15 +254,18 @@ function showResults(requiredCGPA, remainingSem, currentCGPA) {
     const resultDiv = document.getElementById('result');
     const chartsSection = document.getElementById('charts-section');
     const companyEligibility = document.getElementById('company-eligibility');
-    
+
     if (resultDiv) resultDiv.style.display = 'block';
     if (chartsSection) chartsSection.style.display = 'block';
     if (companyEligibility) companyEligibility.style.display = 'block';
-    
+
     // Update results
     document.getElementById('requiredCGPA').textContent = requiredCGPA.toFixed(2);
     document.getElementById('remainingSem').textContent = remainingSem;
-    
+
+    // Update placement eligibility indicator
+    updatePlacementEligibility(currentCGPA);
+
     // Update charts and company info
     updateCharts();
     updateCompanyEligibility(currentCGPA);
@@ -284,7 +286,7 @@ function updateCompanyEligibility(cgpa) {
 
     document.getElementById('eligibleCount').textContent = `${eligibleCount}/${companyData.length}`;
     document.getElementById('userCGPA').textContent = cgpa.toFixed(2);
-    
+
     // Update tier counts
     Object.keys(tierCounts).forEach(tier => {
         const element = document.getElementById(`${tier.toLowerCase().replace('+', 'Plus')}Tier`);
@@ -292,6 +294,182 @@ function updateCompanyEligibility(cgpa) {
             element.textContent = tierCounts[tier];
         }
     });
+}
+
+function updatePlacementEligibility(cgpa) {
+    const badgesContainer = document.getElementById('eligibilityBadges');
+    if (!badgesContainer) return;
+
+    // Clear existing badges
+    badgesContainer.innerHTML = '';
+
+    // Define eligibility criteria
+    const eligibilityCriteria = [
+        {
+            threshold: 8.5,
+            icon: '🟢',
+            title: 'Eligible for Tier-1 Companies',
+            subtitle: 'CGPA ≥ 8.5 - Top tech companies, consulting firms, and high-paying roles',
+            class: 'badge-tier1'
+        },
+        {
+            threshold: 7.0,
+            icon: '🟡',
+            title: 'Eligible for Tier-2 Companies',
+            subtitle: 'CGPA ≥ 7.0 - Mid-tier companies, product-based startups, and service companies',
+            class: 'badge-tier2'
+        },
+        {
+            threshold: 0,
+            icon: '🔴',
+            title: 'Below Common Placement Criteria',
+            subtitle: 'CGPA < 7.0 - Limited placement opportunities, focus on improving CGPA',
+            class: 'badge-tier3'
+        }
+    ];
+
+    // Determine which badges to show based on CGPA
+    eligibilityCriteria.forEach(criteria => {
+        if (cgpa >= criteria.threshold) {
+            const badge = createEligibilityBadge(criteria);
+            badgesContainer.appendChild(badge);
+
+            // Only show the highest matching tier
+            if (criteria.threshold > 0) return;
+        }
+    });
+
+    // If CGPA is below 7.0, show the warning badge
+    if (cgpa < 7.0) {
+        const warningCriteria = eligibilityCriteria[2];
+        const badge = createEligibilityBadge(warningCriteria);
+        badgesContainer.appendChild(badge);
+    }
+
+    // Update eligible companies list
+    updateEligibleCompaniesList(cgpa);
+}
+
+function updateEligibleCompaniesList(cgpa) {
+    const companiesGrid = document.getElementById('companiesGrid');
+    const eligibleCompaniesSection = document.getElementById('eligibleCompaniesSection');
+
+    if (!companiesGrid || !eligibleCompaniesSection) return;
+
+    // Clear existing companies
+    companiesGrid.innerHTML = '';
+
+    // Filter eligible companies
+    const eligibleCompanies = companyData.filter(company => cgpa >= company.cgpa);
+
+    // Count companies by tier
+    const tierCounts = {
+        'all': eligibleCompanies.length,
+        'S+': 0,
+        'A+': 0,
+        'A': 0,
+        'B': 0,
+        'C': 0
+    };
+
+    eligibleCompanies.forEach(company => {
+        tierCounts[company.tier]++;
+    });
+
+    // Update filter button counts
+    document.getElementById('allCount').textContent = tierCounts.all;
+    document.getElementById('sPlusCount').textContent = tierCounts['S+'];
+    document.getElementById('aPlusCount').textContent = tierCounts['A+'];
+    document.getElementById('aCount').textContent = tierCounts['A'];
+    document.getElementById('bCount').textContent = tierCounts['B'];
+    document.getElementById('cCount').textContent = tierCounts['C'];
+
+    // Show/hide section based on eligible companies
+    if (eligibleCompanies.length === 0) {
+        eligibleCompaniesSection.style.display = 'none';
+        return;
+    } else {
+        eligibleCompaniesSection.style.display = 'block';
+    }
+
+    // Create company cards
+    eligibleCompanies.forEach(company => {
+        const card = createCompanyCard(company);
+        companiesGrid.appendChild(card);
+    });
+
+    // Initialize filter functionality
+    initializeCompanyFilters();
+}
+
+function createCompanyCard(company) {
+    const card = document.createElement('div');
+    card.className = 'company-card';
+    card.setAttribute('data-tier', company.tier);
+
+    // Get tier icon
+    const tierIcons = {
+        'S+': '🏆',
+        'A+': '⭐',
+        'A': '💼',
+        'B': '🏢',
+        'C': '🏭'
+    };
+
+    card.innerHTML = `
+        <div class="company-icon">${tierIcons[company.tier] || '🏢'}</div>
+        <div class="company-info">
+            <div class="company-name">${company.name}</div>
+            <div class="company-tier">${company.tier} Tier - ${companyTiers[company.tier].ctc}</div>
+            <div class="company-cgpa">Min CGPA: ${company.cgpa.toFixed(1)}</div>
+        </div>
+    `;
+
+    return card;
+}
+
+function initializeCompanyFilters() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const companyCards = document.querySelectorAll('.company-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+
+            // Add active class to clicked button
+            button.classList.add('active');
+
+            // Get selected tier
+            const selectedTier = button.getAttribute('data-tier');
+
+            // Filter companies
+            companyCards.forEach(card => {
+                const cardTier = card.getAttribute('data-tier');
+
+                if (selectedTier === 'all' || cardTier === selectedTier) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        });
+    });
+}
+
+function createEligibilityBadge(criteria) {
+    const badge = document.createElement('div');
+    badge.className = `eligibility-badge ${criteria.class}`;
+
+    badge.innerHTML = `
+        <div class="badge-icon">${criteria.icon}</div>
+        <div class="badge-content">
+            <div class="badge-title">${criteria.title}</div>
+            <div class="badge-subtitle">${criteria.subtitle}</div>
+        </div>
+    `;
+
+    return badge;
 }
 
 function showError(message) {
@@ -340,7 +518,7 @@ function updateProgressChart(currentCGPA, targetCGPA, chartOptions) {
     if (progressChart) {
         progressChart.destroy();
     }
-    
+
     if (ctxProgress) {
         progressChart = new Chart(ctxProgress.getContext('2d'), {
             type: 'line',
@@ -408,13 +586,13 @@ function updateSemesterChart(completedSem, remainingSem, requiredCGPA, chartOpti
     if (semesterChart) {
         semesterChart.destroy();
     }
-    
+
     if (ctxSemester) {
         const semesterLabels = Array.from(
             { length: remainingSem },
             (_, i) => `Sem ${completedSem + i + 1}`
         );
-        
+
         semesterChart = new Chart(ctxSemester.getContext('2d'), {
             type: 'bar',
             data: {
