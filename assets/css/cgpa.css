@@ -1396,3 +1396,19 @@ input[type=number]::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+
+.eligibility-progress {
+    width: 100%;
+    background: #eee;
+    border-radius: 6px;
+    height: 10px;
+    margin-top: 8px;
+}
+
+#eligibilityBar {
+    height: 100%;
+    background: linear-gradient(90deg, #4CAF50, #00C853);
+    border-radius: 6px;
+    width: 0%;
+    transition: width 0.5s ease;
+}
